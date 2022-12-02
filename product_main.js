@@ -1,6 +1,6 @@
 let itemQuantity = document.querySelector(".itemQuantity");
 
-if(window.localStorage.getItem("cart").length > 0){
+if(window.localStorage.getItem("cart") !== null){
     itemQuantity.textContent = JSON.parse(window.localStorage.getItem("cart")).length;
 }
 else itemQuantity.textContent = 0;
