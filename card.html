@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eduardo Manotas">
+    <meta name="email" content="mano0065@algonquinlive.com">
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <script src="./card_main.js" defer></script>
+
+    <title>ECHO</title>
+</head>
+
+<body>
+
+    <nav>
+        <ul class="nav_ul">
+            <li><a href="./product.html" class="signIn-text">Products <i class="arrow down"></i></a></li>
+            <li>FAQ</li>
+        </ul>
+
+        <a href="./index.html"><img src="./Img/EchoLogo-removebg-preview.png" alt="echo_Logo" class="logo"></a>
+
+        <div class="nav_ul">
+            <div class="login-box"><a href="" class="login-text btn">Login</a></div>
+            <div class="signIn-box"><a href="" class="signIn-text btn">Sign In</a></div>
+        </div>
+
+    </nav>
+
+    <main class="card-container">
+        <div class="card-container-left">
+            <p class="card-title">Complete your purchase</p>
+            <form action="
+            " class="form">
+
+                <div class="input-container"><label for="fname">First Name</label>
+                    <input type="text" name="fname" id="">
+                </div>
+
+                <div class="input-container"><label for="lname">Last Name</label>
+                    <input type="text" name="lname" id="">
+                </div>
+
+
+                <div class="input-container"><label for="email">Email</label>
+                    <input type="email" name="email" id="">
+                </div>
+
+                <div class="input-container"><label for="phone">Phone Number</label>
+                    <input type="tel" name="phone" id="">
+                </div>
+
+                <div class="input-container"><label for="address">Address</label>
+                    <input type="text" name="address" id="">
+                </div>
+
+                <div class="input-container">
+                    <label>City, State</label>
+                    <input list="choices" name="myChoice">
+
+                    <datalist id="choices">
+                        <option value="Ottawa,ON"></option>
+                        <option value="Toronto,ON"></option>
+                        <option value="Montreal,QC"></option>
+                    </datalist>
+                </div>
+
+                <div class="input-container">
+                    <label for="">Delivery preferences</label>
+                    <ul class="deliveryPreferencesList">
+                        <li><input type="radio" name="time"><label>Morning</label></li>
+                        <li><input type="radio" name="time"><label>Afternoon</label></li>
+                        <li><input type="radio" name="time"><label>Night</label></li>
+                    </ul>
+                </div>
+
+                <div class="input-container"><label for="deliveryDate">Delivery Date</label>
+                    <input type="date" name="deliveryDate" id="">
+                </div>
+
+                <div ><label for="pDelivery">Priority Delivery?</label>
+                    <input type="checkbox" name="pDelivery" >
+                </div>
+        </div>
+
+
+        </div>
+        </form>
+        </div>
+        <div class="card-container-right">
+            <div>
+                <p class="card-title">Summary</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="summary-container">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th> Art</th>
+                        <th>Item</th>
+                        <th>Qty.</th>
+                        <th>Subtotal</th>
+                    </tr>
+                    <!-- <tr class="totalRow">
+                        <td></td>
+                        <td></td>
+                        <td>Total</td>
+                        <td class="totalPurchase">$0</td>
+
+                    </tr> -->
+                </table>
+            </div>
+
+            <a href="" class="pay-text pay-box">Pay</a>
+
+        </div>
+
+
+    </main>
+
+    <footer>
+        <ul class="footer_ul">
+            <li>Terms of Service</li>
+            <li>Cookies Settings</li>
+            <li>Privacy Policy</li>
+        </ul>
+
+
+        <p>2022 Echo All right reserved</p>
+    </footer>
+
+</body>
+
+</html>

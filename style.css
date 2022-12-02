@@ -1,0 +1,406 @@
+body {
+  margin: 0px;
+  padding: 20px 50px 0px 50px;
+}
+
+* {
+  font-size: 15px;
+  font-family: "Roboto";
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 10%;
+}
+
+body {
+  background-image: url(./Img/Group\ 1.png);
+  background-position: 200px;
+  background-repeat: no-repeat;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+  margin-bottom: 4px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.logo {
+  width: 150px;
+}
+
+.login-box {
+  width: 100px;
+  height: 40px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-text {
+  text-decoration: none;
+  color: white;
+}
+
+.signIn-box {
+  width: 100px;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+  border: solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signIn-text {
+  text-decoration: none;
+  color: black;
+}
+
+.nav_ul,
+.footer_ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  padding: 0;
+}
+
+.landing-container {
+  display: flex;
+  justify-content: space-around;
+  height: 60%;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 80px;
+}
+
+.right-main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 30%;
+}
+
+.textMainBold {
+    line-height: 0px;
+  font-weight: 400;
+  font-size: 60px;
+  text-decoration: underline;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.shop-btn {
+  width: 300px;
+  height: 60px;
+  background-color: black;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop-text {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  border-top: solid black;
+  display: flex;
+  justify-content: space-around;
+  height: 10%;
+}
+
+/* PRODUCTS */
+
+.products-main {
+  height: 60%;
+  padding: 0px 0px 0px 0px;
+}
+
+/* Main product top align */
+.products-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-title {
+  font-weight: bolder;
+  font-size: 48px;
+  margin: 0;
+}
+
+.cart-btn {
+  width: 100px;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+  border: solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-text {
+  text-decoration: none;
+  color: black;
+}
+
+/* Products gallery */
+.products-catalog {
+  display: flex;
+  gap: 50px;
+  padding: 0 30px 50px 30px;
+  position: relative;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 450px;
+  border-radius: 0px;
+  background: #fafafa;
+  box-shadow: 20px 20px 40px #e6e6e6, -20px -20px 40px #ffffff;
+  overflow: hidden;
+}
+
+.product-card > img {
+  object-fit:fill;
+  transition: transform .2s; /* Animation */
+}
+
+.product-card > .name {
+  font-weight: 900;
+}
+
+body > main > div.products-catalog > div> p{
+    margin: 4px;
+}
+
+
+.product-card:hover {
+  border-radius: 0px;
+  background: #f2f2f2;
+  box-shadow: 20px 20px 40px #e6e6e6, -20px -20px 40px #ffffff;
+  
+}
+
+.product-card:hover > img {
+  
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  
+}
+
+/* Products buttons style */
+.products-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ADD to cart */
+.button-hover-addcart {
+  border: 2px solid #767676;
+  background: transparent;
+  color: #767676;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 0.07rem;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+.button-hover-addcart span {
+  transition: all 0.2s ease-in-out;
+  font-size: 20px;
+}
+
+.button-hover-addcart .fa {
+  position: absolute;
+  
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #000000;
+  right: -20px;
+  transition: 0.4s right cubic-bezier(0.38, 0.6, 0.48, 1);
+}
+
+.button-hover-addcart:hover {
+  border-color: #000000;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.button-hover-addcart:hover span {
+  /* margin-right: 20px; */
+  color: #000000;
+}
+
+.button-hover-addcart:hover .fa {
+  right: 13px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dots-container{
+  position: absolute;
+  right: 50%;
+  bottom: 2%;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+    top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  /* color: white; */
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next{
+  right : 2%;
+}
+
+.prev{
+  left: -1%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(219, 219, 219, 0.8);
+}
+
+/* Card style */
+.card-container {
+  display: flex;
+  height: 70vh;
+  padding: 10px 0px 30px 0px;
+  justify-content: space-around;
+}
+
+.card-title {
+  font-weight: bolder;
+  font-size: 48px;
+  margin: 0;
+  text-align: center;
+}
+
+.card-container-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-right: solid black;
+  width: 40vw;
+  /* padding-right: 100px; */
+}
+
+.card-container-right {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.form {
+    margin: 0;
+    padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.deliveryPreferencesList{
+  list-style: none;
+}
+
+.summary-container{
+  height: 450px;
+  overflow: scroll;
+}
+
+table {
+  text-align: left;
+  border-collapse: separate;
+  border-spacing: 30px 15px;
+  width: 800px;
+  
+}
+
+
+.remove:hover{
+  cursor: pointer;
+}
+
+.thumbnail{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.pay-box {
+  position: absolute;
+  bottom: 0px;
+  width: 300px;
+  height: 60px;
+  background-color: black;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pay-text {
+  text-decoration: none;
+  color: white;
+}

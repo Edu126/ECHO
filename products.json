@@ -1,0 +1,28 @@
+{
+    "products": [
+        {
+            "name": "Flaw",
+            "author": "Visually Us",
+            "price": "200.0",
+            "img_url": "Img/flowers304.png"
+        },
+        {
+            "name": "ColorXpress",
+            "author": "Steve Johnson",
+            "price": "600.0",
+            "img_url": "Img/colorPaint304.png"
+        },
+        {
+            "name": "HandWall",
+            "author": "Pedro Figueras",
+            "price": "450.0",
+            "img_url": "Img/hand304.png"
+        },
+        {
+            "name": "Sweet Dark",
+            "author": "Brett Sayles",
+            "price": "170.0",
+            "img_url": "Img/pina304.png"
+        }
+    ]
+}
