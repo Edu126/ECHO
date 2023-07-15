@@ -126,7 +126,11 @@ footer {
   display: flex;
   justify-content: space-around;
   height: 10%;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
+
 
 /* PRODUCTS */
 
